@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\styles\style.css">
+    <title>Document</title>
+</head>
+<body onload="searchGames()">
+    <div id="selector">
+        <select name="" id="type" onchange="location.reload()">
+            <option value="3d">3d</option>
+            <option value="2d">2d</option>
+        </select>
+        <select name="" id="first-genre" onchange="location.reload()">
+            <option value="mmorpg">mmorpg</option>
+            <option value="shooter">shooter</option>
+            <option value="rpg">rpg</option>
+            <option value="figher">fighter</option>
+        </select>
+        <select name="" id="second-genre" onchange="location.reload()">
+            <option value="fantasy">fantasy</option>
+            <option value="action">action</option>
+        </select>
+        <select name="" id="type-world" onchange="location.reload()">
+            <option value="pvp">pvp</option>
+            <option value="pve">pve</option>
+        </select>
+        <select name="" id="platform" onchange="location.reload()">
+            <option value="pc">pc</option>
+            <option value="console">console</option>
+        </select>
+    </div>
+    
+    <div id="games">
+    </div>
+</body>
+<script src="assets\script\fetch.js"></script>
+</html>
